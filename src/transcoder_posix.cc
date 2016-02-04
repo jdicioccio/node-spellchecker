@@ -14,7 +14,7 @@ static int IsBigEndian(void) {
     char bytes[2];
   } two_byte_value;
 
-  two_byte_value.integer = {0x0102};
+  two_byte_value.integer = 0x0102;
   return two_byte_value.bytes[0] == 1;
 }
 
